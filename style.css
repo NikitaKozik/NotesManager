@@ -1,0 +1,110 @@
+#app {
+  width: 800px;
+  margin: 100px auto 100px;
+  border: 1px solid #a7a7a7;
+  border-radius: 4px;
+  padding: 0;
+  -webkit-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.1);
+  font-size: 0.9rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#app .header {
+  width: 100%;
+  height: 70px;
+  background: #cdcdcd;
+  background: -webkit-gradient(linear, left bottom, left top, from(#cdcdcd), color-stop(50%, #d8d8d8), to(#e4e4e4));
+  background: linear-gradient(0deg, #cdcdcd 0%, #d8d8d8 50%, #e4e4e4 100%);
+  border-bottom: 1px solid #a7a7a7;
+}
+
+#app .header .logo {
+  padding: 10px;
+  font-weight: bold;
+}
+
+#app .header .new {
+  margin: 10px;
+  border-radius: 4px;
+}
+
+#notes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.75fr 0.25fr;
+      grid-template-columns: 0.75fr 0.25fr;
+  min-height: 300px;
+}
+
+#notes aside {
+  display: -ms-grid;
+  display: grid;
+  background-color: #f9f9f9;
+  border-left: 1px solid #a7a7a7;
+}
+
+#notes .entries {
+  position: relative;
+}
+
+#notes .entries .entry {
+  padding: 10px;
+}
+
+#notes .entry-content::first-letter {
+  text-transform: uppercase;
+}
+
+#notes .entry-title {
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+#notes .entry-title::first-letter {
+  text-transform: uppercase;
+}
+
+#notes .entries-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#notes .entries-list li {
+  padding: 20px;
+  border-bottom: 1px solid #a7a7a7;
+  cursor: pointer;
+}
+
+#notes .entries-list li:hover {
+  background-color: white;
+}
+
+#notes .entries-list li.selected {
+  background-color: #686868;
+  border-left: 3px solid #ff3333;
+  color: #fff;
+}
+
+#notes .entries-list .note::first-letter {
+  text-transform: uppercase;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.no-notes {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #575757;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+/*# sourceMappingURL=style.css.map */
