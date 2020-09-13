@@ -5,45 +5,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-    <main id="app">
-        <header class="header">
+    <main class="app">
 
-            <div class="logo">.notepad</div>
-            <button class="new">New Note</button>
+        <aside class="sidebar">
 
-        </header>
-        <div id="notes">
-
-            <div class="entries">
-
-                <div class="entry">
-                    <div class="entry-title">
-                        Lorem ipsum
-                    </div>
-                    <div class="entry-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat totam
-                        voluptas blanditiis consequatur suscipit eum obcaecati facere reiciendis nemo vitae? Aut
-                        recusandae qui hic sint!</div>
-                </div>            
-
+            <div class="logo">
+                Заметочки
             </div>
 
-            <aside>
-                <nav class="entries-list">
-                    <li class="note">hello world</li>
-                    <li class="note selected">lorem ipsum</li>
-                    <li class="note">sunny day</li>
-                </nav>
-            </aside>
+            <div class="controls">
+                <button data-modal>Добавить заметку</button>
+            </div>
+
+
+            <nav class="entries__navigation">
+                <li class="entry__link entries__anchor__active">Lorem, ipsum</li>
+                <li class="entry__link">Dolor sit amet</li>
+            </nav>        </aside>
+
+            <div class="form hide">
+                <form class="new__note__form ">
+                    <input type="text" class="note__title" placeholder="Название заметки">
+                    <textarea class="note__content"></textarea>
+                    <button class="note__new" type="submit">Добавить заметку</button>
+                </form>
+            </div>
+
+        <div class="container">
+            <div class="entry">
+                <div class="entry__title">
+                    <span>Lorem, ipsum.</span>
+                    <span>2020-06-11</span>
+                </div>
+                <div class="entry__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam odio quibusdam distinctio blanditiis minima eius? Fuga, labore. Nulla molestiae enim impedit, sapiente, deleniti aliquam quam qui obcaecati placeat totam reprehenderit quisquam libero tenetur cum suscipit expedita, cupiditate soluta dolore accusantium.</div>
+            </div>
+
+            <div class="entry">
+                <div class="entry__title">
+                    <span>Lorem, ipsum. 2</span>
+                    <span>2020-06-11</span>
+                </div>
+                <div class="entry__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam odio quibusdam distinctio blanditiis minima eius? Fuga, labore. Nulla molestiae enim impedit, sapiente, deleniti aliquam quam qui obcaecati placeat totam reprehenderit quisquam libero tenetur cum suscipit expedita, cupiditate soluta dolore accusantium.</div>
+            </div>
 
         </div>
+
     </main>
 
-    <script src="script.js"></script>
+
+    <script src="assets/script.js"></script>
 
 </body>
 
